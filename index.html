@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site.HelenaPadilha</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(165, 135, 189);
+            justify-content: center;
+            padding: 2%;
+            
+        }
+        form{
+            background-color: rgb(223, 217, 230);
+            border-radius: 10px;
+            padding: 50px;
+        }
+        h1{
+            text-align: center;
+            color: rgb(36, 27, 54);
+        }
+        h4{
+            text-align: center;
+            color: rgb(36, 27, 54);
+        }
+        h3{
+
+            color: rgb(36, 27, 54);
+        }
+        p{
+        
+            color: rgb(36, 27, 54);
+        }
+        h5{
+            color:rgb(36, 27, 54) ;
+        }
+        img{
+            width: 35%;
+            display: block;
+            margin: auto;
+        }
+        .form-group{
+            font-size: large;
+        }
+        .borda{
+         background-color: rgb(165, 135, 189);
+         padding: 10px;
+         border-radius: 8px;
+        }
+        .formper{
+            width: 100%;
+            padding: 20px;
+            border: 3px solid rgb(165, 135, 189);
+            box-sizing: border-box;
+        }
+        .linha{
+            display: inline-flex;
+        }
+        
+    
+       
+    </style>
+</head>
+<body>
+<form action="">
+    <h4>E aí queridos!! hoje o assunto é muito importante e gera muitas dúvidas, então já se prepara e vamos lá!</h4>
+    <h1>Pilares POO</h1>
+    <div class="formgoup">
+    <h2>O que é Orientação a Objetos?</h2>
+    <p>Primeiramente precisamos entender o que é o sistema orientado a objetos, que é um modelo de desenvolvimento de software
+        que usa objetos para representar diferentes aspectos do aplicativo. Tudo é
+        considerado um objeto nesse tipo de sistema, inclusive os dados, processos e
+        funções. Ele possui três estruturas principais</p>
+       <br> <div class="borda">
+        <ul>
+            <li>Classes</li>
+            <li>Métodos</li>
+            <li>Atributos</li>
+        </ul></div>
+    <h2>O que são classes?</h2>
+    <p> Vamos imaginar que seu carro é um objeto de sua propriedade, mas na loja onde você o comprou existiam vários
+        outros, muito similares, com quatro rodas, volante, câmbio, retrovisores, faróis,
+        dentre outras partes. Observe que, apesar do seu carro ser único, podem
+        existir outros com exatamente os mesmos atributos, ou parecidos, mas que ainda são considerados carros. Podemos dizer
+        então que seu objeto pode ser classificado como um carro, e que seu carro
+        nada mais é que um objeto dessa classe chamada &quot;carro&quot;.</p>
+        <h5>exemplo:</h5>
+        <img src="https://www.alura.com.br/artigos/assets/poo-programacao-orientada-a-objetos/class-analogy.png" alt="">
+    </div>
+    <div class="formgroup">
+        <h4>A programação Orientada a Objetos possui quatro principais pilares são eles:</h4>
+        <h2>1. Encapsulamento</h2>
+        <p>   O encapsulamento é uma das principais técnicas que define a programação
+            orientada a objetos. Se trata de um dos elementos que adicionam segurança à
+            aplicação em uma programação orientada a objetos pelo fato de esconder as
+            propriedades, criando uma espécie de caixa preta. </p>
+           <p>    Para fazermos um paralelo com o que vemos no mundo real, temos o
+            encapsulamento em outros elementos. Por exemplo, quando clicamos no botão
+            ligar da televisão, não sabemos o que está acontecendo internamente.
+            Podemos então dizer que os métodos que ligam a televisão estão
+            encapsulados. </p>
+            <h5>exemplo:</h5>
+           <img src="img2.png" alt=""> <br>
+           <div class="borda">
+         <p>Neste exemplo, temos a classe Veiculo que possui um atributo privado chamado placa.
+                 O encapsulamento é aplicado ao controlar o acesso direto a esse atributo e fornecer métodos públicos para interagir com ele. 
+                 O método setPlaca é usado para definir a placa do veículo, enquanto o método exibirPlaca é usado para mostrar a placa na saída. 
+                 Essa abordagem protege o atributo placa de modificações indesejadas e centraliza o acesso a ele por meio de métodos controlados.
+
+            </p>
+        </div>
+    </div>
+    <div class="formgroup">
+        <h2>2. Herança</h2>
+        <p>   A herança é um mecanismo da Orientação a Objeto que permite criar novas
+            classes a de classes já existentes, utilizando características já existentes na
+            classe a ser estendida. Por isso o nome herança já que as
+            classes criadas herdam características das já existentes. Vamos imaginar uma
+            família: a criança, por exemplo, está herdando características de seus pais. Os
+            pais, por sua vez, herdam algo dos avós, o que faz com que a criança também
+            o faça, e assim sucessivamente. Na orientação a objetos a questão é
+            exatamente assim, o objeto abaixo na hierarquia irá herdar características de
+            todos os objetos acima dele, seus “ancestrais”.</p>
+            <h5>exemplo:</h5>
+            <div class="linha">
+        <img src="https://image.slidesharecdn.com/7-herana-160528201808/85/Programacao-Orientacao-a-Objetos-Heranca-4-638.jpg" alt=""> <img src="https://hermes.dio.me/assets/articles/ddf99cf8-6360-4889-812b-a24795d37355.png" alt=""> </div><br>
+        <br><div class="borda">
+           <p>A herança é exemplificada pela relação entre uma classe base Veiculo e suas subclasses Carro e Motocicleta. A classe base possui atributos e métodos comuns, que são herdados pelas subclasses.</p>
+        </div>
+    </div>
+    <div class="formgroup">
+        <h2>3. Polimorfismo</h2>
+        <p>   Polimorfismo é a característica única de linguagens orientadas a objetos que
+            permite que diferentes objetos respondam a mesma mensagem cada um a sua
+            maneira. Na natureza, existem animais que são capazes de alterar sua forma
+            conforme a necessidade, e é a ideia que vem o polimorfismo na orientação a
+            objetos, como por um exemplo, temos um objeto que pertence a categoria
+            “Meios de transporte”. Esse possui um método, ou ação, “ligar” temos dois
+            objetos, o carro e a moto que possuem de maneira igual a função ligar,
+            porém cada um vai ser realizado de maneira diferente. Assim, precisamos para
+            cada uma das classes filhas, reescrever o método “ligar”.</p>
+            <h5>exemplo:</h5>
+            <img src="https://hermes.dio.me/assets/articles/4818a31c-48b1-4e7f-9296-cd16fe61b6f7.png" alt="">
+    </div>
+    <div class="formgroup">
+        <h2>4. Abstração</h2>
+        <p>A abstração consiste em um dos pontos mais importantes da Orientação a
+            objetos, como estamos falando do mundo virtual trazendo uma representação
+            de um objeto real, é preciso imaginar o que esse objeto irá realizar dentro de
+            nosso sistema. São três pontos que devem ser levados em consideração nessa
+            abstração. <b>Identidade</b> ao objeto que vamos criar, essa identidade deve ser
+            única dentro do sistema para que não haja conflito, essa identidade é
+            adicionada a pacotes com informações que não podem ser repetidas.
+            <b>Propriedades</b>, como todo objeto no mundo real possui características aqui na
+            linguagem orientada a objetos elas são chamadas de propriedades. Por
+            exemplo, as propriedades de um objeto “cachorro” poderiam ser “tamanho”,
+            “raça” e “idade”. <b>Métodos</b>, essa é a parte que dita o que o objeto irá executar,
+            esses métodos podem ser extremamente variáveis, desde “Ascender” em um
+            objeto lâmpada até “latir” em um objeto cachorro. </p>
+            <h5>exemplo:</h5>
+            <img src="https://hermes.dio.me/assets/articles/60d108b7-ac06-4e5a-88f1-6069c4754415.png" alt=""><br>
+           <div class="borda"><p>Neste exemplo, estamos lidando com a hierarquia de classes relacionada a veículos.
+             A classe abstrata Veiculo serve como uma classe base para as subclasses Carro e Motocicleta. 
+             A classe abstrata Veiculo tem um construtor que recebe a placa do veículo, enquanto a subclasse Carro e Motocicleta estendem a classe base.
+             Cada subclasse implementa o método abstrato exibirDetalhes, que é responsável por exibir os detalhes específicos de cada tipo de veículo,
+             juntamente com sua placa.</p></div><br>
+    </div>
+    <div class="formper">
+        <label for="Quer nos falar algo?"><b>Quer nos falar algo?</b></label>
+        <input type="text" id="Deixe seu feedback" placeholder="Deixe seu feedback" required>
+    </div>
+
+    <div class="formref">
+        <h3>Referências bibliográficas</h3>
+        <p><a href="https://www.devmedia.com.br/os-4-pilares-da-programacao-orientada-a-
+            objetos/9264">https://www.devmedia.com.br/os-4-pilares-da-programacao-orientada-a-
+            objetos/9264</a></p>
+            <p><a href="https://www.devmedia.com.br/encapsulamento-polimorfismo-heranca-em-
+                java/12991#:~:text=Encapsulamento%20vem%20de%20encapsular%2C%20qu
+                e,e%20m%C3%A9todos%20de%20uma%20classe.">https://www.devmedia.com.br/encapsulamento-polimorfismo-heranca-em-
+                java/12991#:~:text=Encapsulamento%20vem%20de%20encapsular%2C%20qu
+                e,e%20m%C3%A9todos%20de%20uma%20classe.</a></p>
+                <p><a href="https://www.dio.me/articles/os-4-pilares-da-programacao-orientada-a-objetos-
+                    SSU4Q9">https://www.dio.me/articles/os-4-pilares-da-programacao-orientada-a-objetos-
+                    SSU4Q9</a></p>
+    </div>
+</form>
+</body>
+</html>
